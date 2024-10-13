@@ -11,6 +11,7 @@ class Application extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'vazir'),
       home: HomeScreen(),
     );
   }
@@ -24,8 +25,17 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.deepOrangeAccent,
       body: SafeArea(
-        child: Center(
-          child: Image(image: AssetImage('images/welcome.png')),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'خوش آمدید',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+            ),
+            Image(
+              image: AssetImage('images/welcome.png'),
+            ),
+          ],
         ),
       ),
     );
