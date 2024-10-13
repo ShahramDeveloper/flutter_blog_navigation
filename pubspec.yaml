@@ -22,3 +22,8 @@ flutter:
 
   assets:
     - images/
+
+  fonts:
+    - family: vazir
+      fonts:
+        - asset: fonts/vazir_fd_medium_wol.ttf
