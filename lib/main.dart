@@ -22,20 +22,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.deepOrangeAccent,
       body: SafeArea(
         child: Center(
-          child: TextButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return SecondScreen();
-                  },
-                ),
-              );
-            },
-            child: Text('Next'),
-          ),
+          child: Image(image: AssetImage('images/welcome.png')),
         ),
       ),
     );
