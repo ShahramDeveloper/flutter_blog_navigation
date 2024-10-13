@@ -25,43 +25,45 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.deepOrangeAccent,
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'خوش آمدید',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
-            ),
-            Image(
-              image: AssetImage('images/welcome.png'),
-            ),
-            OutlinedButton(
-              onPressed: () {},
-              child: Text(
-                'ورود به حساب',
-                style: TextStyle(fontSize: 16.0),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'خوش آمدید',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
               ),
-              style: OutlinedButton.styleFrom(
-                minimumSize: Size(200.0, 40.0),
-                foregroundColor: Colors.white,
-                side: BorderSide(
-                  color: Colors.white,
-                  width: 2.0,
+              Image(
+                image: AssetImage('images/welcome.png'),
+              ),
+              OutlinedButton(
+                onPressed: () {},
+                child: Text(
+                  'ورود به حساب',
+                  style: TextStyle(fontSize: 16.0),
+                ),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: Size(200.0, 40.0),
+                  foregroundColor: Colors.white,
+                  side: BorderSide(
+                    color: Colors.white,
+                    width: 2.0,
+                  ),
                 ),
               ),
-            ),
-            TextButton(
-              style: TextButton.styleFrom(
-                  foregroundColor: Colors.black,
-                  backgroundColor: Colors.white,
-                  minimumSize: Size(200.0, 40.0)),
-              onPressed: () {},
-              child: Text(
-                'ثبت نام',
-                style: TextStyle(fontSize: 16.0),
+              TextButton(
+                style: TextButton.styleFrom(
+                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.white,
+                    minimumSize: Size(200.0, 40.0)),
+                onPressed: () {},
+                child: Text(
+                  'ثبت نام',
+                  style: TextStyle(fontSize: 16.0),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
