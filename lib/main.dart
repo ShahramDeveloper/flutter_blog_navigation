@@ -35,6 +35,18 @@ class HomeScreen extends StatelessWidget {
             Image(
               image: AssetImage('images/welcome.png'),
             ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Text('ثبت نام'),
+              style: OutlinedButton.styleFrom(
+                minimumSize: Size(200.0, 40.0),
+                foregroundColor: Colors.white,
+                side: BorderSide(
+                  color: Colors.white,
+                  width: 2.0,
+                ),
+              ),
+            )
           ],
         ),
       ),
