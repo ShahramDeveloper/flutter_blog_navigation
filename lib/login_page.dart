@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_blog_navigation/blog_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -36,7 +37,13 @@ class LoginPage extends StatelessWidget {
                 image: AssetImage('images/welcome.png'),
               ),
               OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => BlogScreen(),
+                    ),
+                  );
+                },
                 child: Text(
                   'ورود به حساب',
                   style: TextStyle(fontSize: 16.0),
