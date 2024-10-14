@@ -74,6 +74,14 @@ class BlogScreen extends StatelessWidget {
                       color: Colors.green,
                     ),
                   ],
+                ),
+                Container(
+                  padding: EdgeInsets.only(top: 10),
+                  width: 300,
+                  child: Divider(
+                    thickness: 1,
+                    color: Colors.black,
+                  ),
                 )
               ],
             ),
