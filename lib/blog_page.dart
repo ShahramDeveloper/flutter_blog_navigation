@@ -5,12 +5,18 @@ class BlogScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: SafeArea(
-          child: Center(
-            child: Text('Second screen'),
-          ),
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        elevation: 0,
+        iconTheme: IconThemeData(color: Colors.black),
+        title: Text('VIP اخبار و سیگنال های '),
+      ),
+      body: const SafeArea(
+        child: Center(
+          child: Text('Second screen'),
         ),
       ),
     );
