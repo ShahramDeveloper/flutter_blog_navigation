@@ -14,9 +14,17 @@ class BlogScreen extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         title: Text('VIP اخبار و سیگنال های '),
       ),
-      body: const SafeArea(
+      body: SafeArea(
         child: Center(
-          child: Text('Second screen'),
+          child: Padding(
+            padding: EdgeInsets.all(10),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: Image(
+                image: AssetImage('images/s.png'),
+              ),
+            ),
+          ),
         ),
       ),
     );
