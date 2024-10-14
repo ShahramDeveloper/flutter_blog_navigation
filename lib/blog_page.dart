@@ -16,74 +16,255 @@ class BlogScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: Center(
-          child: Padding(
-            padding: EdgeInsets.all(8),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: Image(
-                    image: AssetImage('images/s.png'),
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: EdgeInsets.all(8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image(
+                      image: AssetImage('images/s.png'),
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  textAlign: TextAlign.center,
-                  ' برای ۱۴ آبان safeMoon سیگنال خرید ',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
+                  SizedBox(
+                    height: 10,
                   ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'فروش روی ۱۲،۵۶۰',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.red),
+                  Text(
+                    textAlign: TextAlign.center,
+                    ' برای ۱۴ آبان safeMoon سیگنال خرید ',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
                     ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Icon(
-                      Icons.sell,
-                      size: 20,
-                      color: Colors.red,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      'خرید روی ۱۲،۳۶۵',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.green),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Icon(
-                      Icons.price_check,
-                      size: 20,
-                      color: Colors.green,
-                    ),
-                  ],
-                ),
-                Container(
-                  padding: EdgeInsets.only(top: 10),
-                  width: 300,
-                  child: Divider(
-                    thickness: 1,
-                    color: Colors.black,
                   ),
-                )
-              ],
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'فروش روی ۱۲،۵۶۰',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.red),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.sell,
+                        size: 20,
+                        color: Colors.red,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'خرید روی ۱۲،۳۶۵',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.price_check,
+                        size: 20,
+                        color: Colors.green,
+                      ),
+                    ],
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    width: 300,
+                    child: Divider(
+                      thickness: 1,
+                      color: Colors.black,
+                    ),
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image(
+                      image: AssetImage('images/r.png'),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    textAlign: TextAlign.center,
+                    ' برای ۱۴ آبان Ripple سیگنال خرید ',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'فروش روی ۴،۵۶۰',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.red),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.sell,
+                        size: 20,
+                        color: Colors.red,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'خرید روی ۶،۵۰۰',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.price_check,
+                        size: 20,
+                        color: Colors.green,
+                      ),
+                    ],
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    width: 300,
+                    child: Divider(
+                      thickness: 1,
+                      color: Colors.black,
+                    ),
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image(
+                      image: AssetImage('images/a.png'),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    textAlign: TextAlign.center,
+                    ' برای ۱۴ آبان Alchemy Pay سیگنال خرید ',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'فروش روی ۱۸،۶۵۰',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.red),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.sell,
+                        size: 20,
+                        color: Colors.red,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'خرید روی ۲۰،۰۰۰',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.price_check,
+                        size: 20,
+                        color: Colors.green,
+                      ),
+                    ],
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    width: 300,
+                    child: Divider(
+                      thickness: 1,
+                      color: Colors.black,
+                    ),
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image(
+                      image: AssetImage('images/c.png'),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    textAlign: TextAlign.center,
+                    ' برای ۱۴ آبان Cosmos سیگنال خرید ',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'فروش روی ۱۳،۷۳۴',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.red),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.sell,
+                        size: 20,
+                        color: Colors.red,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'خرید روی ۱۶،۵۶۰',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Icon(
+                        Icons.price_check,
+                        size: 20,
+                        color: Colors.green,
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20)
+                ],
+              ),
             ),
           ),
         ),
