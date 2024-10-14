@@ -4,7 +4,8 @@ Widget getBlogPost(
     {required String imageName,
     required String title,
     required String buy,
-    required String sell}) {
+    required String sell,
+    required bool showDivider}) {
   return Column(
     children: [
       ClipRRect(
@@ -61,14 +62,15 @@ Widget getBlogPost(
           ),
         ],
       ),
-      Container(
-        padding: EdgeInsets.symmetric(vertical: 10),
-        width: 300,
-        child: Divider(
-          thickness: 1,
-          color: Colors.black,
+      if (showDivider)
+        Container(
+          padding: EdgeInsets.symmetric(vertical: 10),
+          width: 300,
+          child: Divider(
+            thickness: 1,
+            color: Colors.black,
+          ),
         ),
-      ),
     ],
   );
 }
