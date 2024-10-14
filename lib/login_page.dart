@@ -4,6 +4,14 @@ import 'package:flutter_blog_navigation/blog_page.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
+  void navigateToBlogPage(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (BuildContext context) => BlogScreen(),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,11 +46,7 @@ class LoginPage extends StatelessWidget {
               ),
               OutlinedButton(
                 onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => BlogScreen(),
-                    ),
-                  );
+                  navigateToBlogPage(context);
                 },
                 child: Text(
                   'ورود به حساب',
